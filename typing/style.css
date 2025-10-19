@@ -1,0 +1,25 @@
+.highlight {
+  background-color: yellow; 
+}
+
+.error {
+  background-color: lightcoral; 
+  border: red; 
+}
+
+.stats {
+  display:flex; 
+  gpa:1.25rem; 
+  margin-top:1rem; 
+  flex-wrap:wrap; 
+}
+.stat{ display:flex; gap:.4rem; align-items:baseline }
+.stat-label{ color:var(--muted); font-size:.9rem; }
+.stat-value{ font-weight:700; font-size:1.05rem; }
+
+.visually-hidden, .sr-only {
+  position:absolute !important; 
+  height:1px; width:1px; 
+  overflow:hidden; clip:rect(1px, 1px, 1px, 1px); 
+  white-space:nowrap; border:0; padding:0; margin:-1px; 
+}

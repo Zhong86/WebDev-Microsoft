@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Typing Game</h1>
+  <p>Practice your typing skills with a quote from Sherlock Holmes: </p>
+  <p id="quote"></p>
+  <p id="message"></p>
+  <div>
+    <input type="text" aria-label="current word" id="typed-value">
+    <button type="button" id="start">Start</button>
+  </div>
+  <div class="stats" role="region" aria-labelledby="statsHeading">
+      <h2 id="statsHeading" class="visually-hidden">Player Statistics</h2>
+      <div class="stat">
+        <span class="stat-label">WPM: </span>
+        <span id="wpm" class="stat-value" aria-live="polite">0</span>
+      </div>
+       <div class="stat">
+        <span class="stat-label">Accuracy: </span>
+        <span id="accuracy" class="stat-value" aria-live="polite">100%</span>
+      </div>
+       <div class="stat">
+        <span class="stat-label">Streak: </span>
+        <span id="streak" class="stat-value" aria-live="polite">0</span>
+      </div>
+      </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
